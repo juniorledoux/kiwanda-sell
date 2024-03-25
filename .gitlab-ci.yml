@@ -1,0 +1,46 @@
+stages:
+  - deploy
+
+deploy_fw0301:
+  stage: deploy
+  script:
+    - mkdir -p public/fw0301
+    - cp -r ./Module-FW03/Bootcamp-FW0301/* public/fw0301
+  artifacts:
+    paths:
+      - public/fw0301
+  only:
+    - main
+    
+deploy_fw0302:
+  stage: deploy
+  script:
+    - mkdir -p public/fw0302
+    - cp -r ./Module-FW03/Bootcamp-FW0302/* public/fw0302
+  artifacts:
+    paths:
+      - public/fw0302
+  only:
+    - main
+
+deploy_fw0303:
+  stage: deploy
+  script:
+    - mkdir -p public/fw0303
+    - cp -r ./Module-FW03/Bootcamp-FW0303/* public/fw0303
+  artifacts:
+    paths:
+      - public/fw0303
+  only:
+    - main
+
+deploy_fw0401:
+  stage: deploy
+  script:
+    - mkdir -p public/fw0401
+    - cp -r ./Module-FW04/Bootcamp-FW0401/* public/fw0401
+  artifacts:
+    paths:
+      - public/fw0401
+  only:
+    - main

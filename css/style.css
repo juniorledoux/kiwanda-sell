@@ -1,0 +1,593 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: rgb(253, 229, 222);
+  font-family: "Bahnschrift";
+}
+
+/* nav-bar */
+nav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.nav-items {
+  width: 530px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.demi-cercle {
+  width: 15px;
+  height: 30px;
+  margin: 0 8px 0 0;
+  background: #000;
+  border-radius: 0 100px 100px 0;
+  overflow: hidden;
+}
+strong {
+  font-weight: bold;
+  margin: 0 3px;
+}
+.flex-end {
+  justify-content: end;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+}
+.m-5 {
+  margin: 0 20px;
+}
+.links {
+  margin: 0 10px;
+  color: rgb(13, 13, 13);
+}
+.links:hover,
+footer div a:hover,
+.logo:hover {
+  color: rgb(182, 179, 179);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.btn-apple {
+  background-color: rgb(15, 15, 15);
+  padding: 5px 20px 5px 10px;
+  border-radius: 6.5px;
+}
+.btn-apple:hover {
+  background-color: rgba(15, 15, 15, 0.274);
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.747);
+}
+.logo-apple {
+  margin: 0 5px;
+}
+.text-apple p:first-child {
+  font-size: 0.6em;
+  color: white;
+  margin-bottom: 2.5px;
+}
+.text-apple p:last-child {
+  margin-top: 2.5px;
+  padding: 0;
+  margin: 0;
+  font-size: 0.7em;
+  color: white;
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+
+
+/*premiere section*/
+.section-1 {
+  display: flex;
+  align-items: start;
+  padding: 0;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.parallelogram-group {
+  width: 70px;
+}
+.parallelogram {
+  width: 100%;
+  height: 10px;
+  margin: 10px 0;
+  transform: skewY(30deg);
+  background: #000;
+}
+.annee-group {
+  width: 91%;
+  display: flex;
+  align-items: center;
+}
+.annee-group div:first-child {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+  color: rgb(12, 23, 32);
+}
+.annee-group div:last-child {
+  font-size: 0.9em;
+}
+.annee-group div:last-child p {
+  color: rgb(23, 32, 41);
+  margin: 1px 1px 1px 15px;
+}
+
+
+/* seconde section  */
+.section-2 {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+.child-section2 {
+  width: 520px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+}
+.child-section2:first-child {
+  margin: 15px 0;
+  width: 490px;
+  justify-content: start;
+  align-self: center;
+}
+.circle {
+  background-color: rgb(255, 210, 190);
+  width: 420px;
+  border-radius: 250px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circle div {
+  height: 70%;
+  position: relative;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.tiret {
+  display: inline-block;
+  height: 1.39px;
+  width: 26px;
+  margin: 0 10px;
+}
+.tiret-noir {
+  background-color: black;
+}
+.tiret-blanc {
+  background-color: white;
+}
+.circle div p {
+  margin: 0 0 0 10px;
+  padding: 5px 0;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+.fs-8 {
+  font-size: 0.8em;
+}
+.circle div h1 {
+  margin: 0 0 0 10px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 4.23em;
+}
+.circle div h2 {
+  margin: 0 0 0 10px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 4em;
+  color: darkgray;
+}
+.btn-learn {
+  background-color: rgb(12, 23, 32);
+  padding: 12px 12px;
+  color: white;
+  font-size: 0.7em;
+  width: 115px;
+  text-align: center;
+  border-radius: 7px;
+}
+.btn-learn:hover {
+  background-color: rgba(15, 15, 15, 0.541);
+  color: black;
+  box-shadow: -5px 5px rgba(15, 15, 15, 0.541);
+}
+.b-2 {
+  position: relative;
+  bottom: 2.5px;
+}
+
+
+/* formulaire */
+#formLogin {
+  background-color: rgb(13, 13, 13);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  width: 60%;
+}
+#formRegister {
+  background-color: rgb(13, 13, 13);
+  border-radius: 20px;
+  padding: 15px;
+  color: white;
+  width: 60%;
+}
+form h1 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.form-group {
+  padding: 8px 0;
+}
+.form-group label {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  margin: 8px 0;
+}
+.form-group input {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+.input-with {
+  width: 84.8%;
+  background-image: url("./check-circle-solid.svg");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding: 0 27px 0 20px;
+  background-color: white;
+}
+#password {
+  padding: 0 20px;
+  width: 87%;
+}
+.form-group p {
+  font-size: 0.7em;
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 13px 0;
+}
+.terms {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+.form-foot {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.btn,
+.forgot-passcode {
+  padding: 12px 0px;
+  color: rgb(13, 13, 13);
+  font-size: 0.7em;
+  text-align: center;
+  border-radius: 7px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(255, 210, 190);
+  width: 155px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 209, 190, 0.527);
+  cursor: pointer;
+}
+
+.forgot-passcode {
+  color: rgb(255, 210, 190);
+  background-color: inherit;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 0.7em;
+  font-family: "Trebuchet MS";
+}
+.forgot-passcode:hover {
+  color: white;
+}
+
+
+/* pieds de page  */
+footer {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+}
+footer div a {
+  color: rgb(31, 62, 86);
+  font-size: 0.9em;
+}
+.bar {
+  color: rgb(31, 62, 86);
+  margin: 0 20px;
+}
+
+/* css pour le dashboard et la page edit*/
+.group-parallelogram {
+  width: 100%;
+}
+.contain-child {
+  width: 70px;
+}
+.contain-child:last-child {
+  width: 85%;
+  margin: 15px 25px;
+}
+.main-contain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.table-contain {
+  overflow-x: auto;
+}
+
+/* la table  */
+#table {
+  background-color: rgb(253, 192, 165);
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.contain-child:last-child h1 {
+  text-align: center;
+  color: rgba(13, 13, 13, 0.836);
+  text-decoration: underline;
+  margin: 30px;
+}
+tr th {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.432);
+  padding: 15px;
+  text-align: center;
+}
+tbody tr {
+  background-color: rgba(255, 255, 255, 0.808);
+  text-align: center;
+}
+td {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+.trash {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.edit {
+  color: white;
+  background-color: aqua;
+  border: none;
+  margin-right: 3px;
+  padding: 2.5px 5px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.trash:hover,.edit:hover {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+}
+
+/* le formulaire */
+.formVente-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  align-items: end;
+}
+
+.formVente-group div {
+  width: 30%;
+}
+
+.formVente-group div input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  height: 25px;
+  width: 98%;
+}
+.formVente-group div button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-color: rgba(0, 128, 0, 0.568);
+  color: rgba(0, 128, 0, 0.568);
+}
+.formVente-group div button:hover {
+  background-color: rgba(0, 128, 0, 0.568);
+  color: wheat;
+  cursor: pointer;
+}
+.btn-client {
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px dashed rgba(9, 0, 128, 0.568);
+  color: rgba(9, 0, 128, 0.568);
+}
+.btn-client:hover {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgba(9, 0, 128, 0.568);
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-items {
+    width: 30%;
+  }
+  .nav-items:last-child {
+    width: 70%;
+  }
+  .section-1 {
+    margin: 50px 0;
+  }
+  .section-2 {
+    width: 95%;
+    margin: 50px 0;
+  }
+  .child-section2 {
+    width: 50%;
+  }
+  .child-section2:first-child {
+    width: 50%;
+    margin: 15px 0;
+  }
+  .child-section2:last-child {
+    justify-content: center;
+  }
+  .circle {
+    width: 370px;
+    height: 370px;
+  }
+  .circle div p {
+    margin: 0 0 20px 10px;
+  }
+  .fs-8 {
+    font-size: 0.7em;
+  }
+  .circle div h1 {
+    margin: 0 0 10px 10px;
+    font-size: 3.65em;
+  }
+  #formRegister {
+    width: 75%;
+    padding: 20px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .contain-child:last-child {
+    width: 85%;
+    margin: 10px 15px;
+  }
+  .formVente-group:last-child div:last-child {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .formVente-group div button {
+    padding: 5px 10px;
+  }
+  .btn-client {
+    padding: 3px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .nav-items {
+    width: 100%;
+  }
+  .nav-items:last-child {
+    width: 100%;
+  }
+  .contain-child:first-child {
+    position: relative;
+    bottom: 40px;
+  }
+  .formVente-group {
+    flex-direction: column;
+  }
+
+  .formVente-group div {
+    width: 100%;
+  }
+  .formVente-group div:last-child {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 765px) {
+  nav {
+    width: 98%;
+  }
+  .nav-link {
+    margin-top: 20px;
+  }
+  .section-2 {
+    width: 100%;
+  }
+  .child-section2 {
+    width: 100%;
+  }
+  .child-section2:first-child {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .circle {
+    width: 320px;
+    height: 320px;
+  }
+  .circle div {
+    height: auto;
+    width: 90%;
+  }
+  .circle div p {
+    margin: 0 0 20px 10px;
+  }
+  .fs-8 {
+    font-size: 0.7em;
+  }
+  .circle div h1 {
+    margin: 0 0 10px 10px;
+    font-size: 2.87em;
+  }
+  .circle div h2 {
+    margin: 0 0 20px 10px;
+  }
+  .child-section2:last-child {
+    justify-content: center;
+    align-self: center;
+  }
+  #formLogin {
+    width: 80%;
+  }
+  #formRegister {
+    width: 80%;
+    padding: 25px;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contain-child:last-child {
+    width: 84%;
+    margin: 0px 15px;
+  }
+}
